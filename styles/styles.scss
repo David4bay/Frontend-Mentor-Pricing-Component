@@ -51,9 +51,37 @@ aside.data-plans {
     display: grid;
     color: hsla(234, 14%, 74%, 1);
     grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
     font-size: 15px;
     margin-top: 45px;
     margin-bottom: 80px;
+}
+
+div.checkbox {
+    display: flex;
+    align-items: center;
+    width: 60px;
+    height: 36px;
+    margin: auto;
+    border-radius: 15px;
+    background-color: hsl(237, 63%, 64%);
+    position: relative;
+}
+
+input[type="checkbox"] {
+    height: 100%;
+    width: 100%;
+    z-index: 999999;
+    opacity: 1;
+    position: relative;
+}
+
+div.circle-switch {
+    border-radius: 15px;
+    width: 27px;
+    height: 27px;
+    background-color: #fff;
+    position: absolute;
 }
 
 section.cards {
@@ -74,11 +102,32 @@ div.cards {
 
 }
 
+div.professional-card {
+    background: linear-gradient(45deg,hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+header.diff, span.diff, h1.diff, article.diff, p.data-plan.diff {
+    color: #fff;
+}
+
+p.data-plan.diff {
+    border-top: 1px outset #fff;
+}
+
+p.data-plan.diff:last-child {
+    border-bottom: 1px inset #fff;
+}
+
+button.learn-more.diff {
+    background: #fff;
+    color: hsl(237, 63%, 64%);
+}
+
 div.price {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -50px;
+    margin-top: -30px;
     color: hsl(232, 13%, 33%);
 }
 
@@ -123,6 +172,18 @@ button.learn-more {
     background: linear-gradient(45deg,hsl(236, 72%, 79%), hsl(237, 63%, 64%));
 }
 
+button.learn-more:hover {
+    cursor: pointer;
+    border: 1px solid hsl(232, 13%, 33%);
+    background: none;
+    color: hsl(237, 63%, 64%);
+}
+
+button.learn-more.diff:hover {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
 footer {
     background-color: hsl(240, 78%, 98%);
 }
@@ -133,5 +194,7 @@ footer {
 }
 
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
 }
+
