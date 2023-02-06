@@ -57,6 +57,11 @@ aside.data-plans {
   margin-bottom: 80px;
 }
 
+.on {
+  position: absolute;
+  right: 5px;
+}
+
 div.checkbox {
   display: flex;
   align-items: center;
@@ -69,11 +74,15 @@ div.checkbox {
 }
 
 input[type=checkbox] {
+  opacity: 0;
   height: 100%;
   width: 100%;
-  z-index: 999999;
-  opacity: 1;
-  position: relative;
+  z-index: 99999;
+  position: absolute;
+}
+
+input[type=checkbox]:checked div.checkbox {
+  background-color: green;
 }
 
 div.circle-switch {
@@ -82,6 +91,7 @@ div.circle-switch {
   height: 27px;
   background-color: #fff;
   position: absolute;
+  transition: 0.4;
 }
 
 section.cards {
