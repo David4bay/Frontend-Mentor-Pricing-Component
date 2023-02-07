@@ -13,10 +13,10 @@
     Our Pricing
     <aside class="data-plans">
       <span class="annual rgt">Annually</span>
-      <div class="checkbox box">
-        <input type="checkbox" class="checkbox" name="price-toggle" id="checkbox">
-        <div class="circle-switch" id="toggle"></div>
-      </div>
+      <label class="switch">
+        <input type="checkbox" checked>
+        <span class="slider round"></span>
+      </label>
       <span class="monthly lft">Monthly</span>
     </aside>
   </header>
@@ -24,7 +24,8 @@
     <div class="basic-card cards">
       <header class="basic-card-header cards header">Basic</header>
       <div class="price">
-        <span class="currency">&dollar;</span><h1 class="basic-price" id="basic">19.99</h1>
+        <span class="currency">&dollar;</span><h1 class="basic-price" id="main_content">19.99</h1>
+        <h1 class="basic-price" id="secondary_content">199.99</h1>
       </div>
       <article class="card-details">
         <p class="data-plan">500 GB Storage</p>
@@ -38,7 +39,8 @@
         Professional
       </header>
       <div class="price diff">
-        <span class="currency diff">&dollar;</span><h1 class="professional-price diff">24.99</h1>
+        <span class="currency diff">&dollar;</span><h1 class="professional-price diff" id="main_content">24.99</h1>
+        <h1 class="professional-price diff" id="secondary_content">249.99</h1>
       </div>
       <article class="card-details">
         <p class="data-plan diff">1 TB Storage</p>
@@ -52,7 +54,8 @@
         Master
       </header>
       <div class="price">
-        <span class="currency">&dollar;</span><h1 class="master-price">39.99</h1>
+        <span class="currency">&dollar;</span><h1 class="master-price" id="main_content">39.99</h1>
+        <h1 class="master-price" id="secondary_content">399.99</h1>
       </div>
       <article class="card-details">
         <p class="data-plan">2 TB Storage</p>

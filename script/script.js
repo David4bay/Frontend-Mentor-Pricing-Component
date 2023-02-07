@@ -1,12 +1,10 @@
-const checkbox = document.getElementById("checkbox");
+const mainContent = document.querySelectorAll('#main_content');
 
-const toggle = document.getElementById("toggle");
+const secondaryContent = document.querySelectorAll('#secondary_content');
 
-const basic = document.getElementById("basic");
-
-const main = document.querySelector("main");
-
-checkbox.addEventListener("click", () => {
-    toggle.style.transform = "translateX(-26px)";
-})
-
+document.querySelector('.switch input').addEventListener('change', e => {
+  for (let i = 0; i < secondaryContent.length; i++) {
+    mainContent[i].style.display = e.target.checked ? 'block' : 'none';
+  secondaryContent[i].style.display = e.target.checked ? 'none' : 'block';
+  }
+});
