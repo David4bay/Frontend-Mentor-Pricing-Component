@@ -43,6 +43,7 @@ span.lft {
 }
 
 header.header {
+  font-size: 20px;
   margin-top: 10px;
   padding-bottom: 40px;
   color: hsl(233deg, 13%, 49%);
