@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub Code](https://your-solution-url.com)
+- Solution URL: [GitHub Code](https://github.com/David4bay/Frontend-Mentor-Pricing-Component)
 - Live Site URL: [Live link](https://cute-dango-da6b15.netlify.app)
 
 ## My process
